@@ -1,23 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
+:root { --background: #67578a; --foreground: #f6f0e7; }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-purple: #382348;
+  --color-brand-violet: #67578a;
+  --color-brand-cream: #f6f0e7;
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-playfair);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--background); color: var(--foreground); font-family: var(--font-sans), Arial, Helvetica, sans-serif; overflow-x: hidden; }
+.section-shell { background: #67578a; }
+.hero-section { background: linear-gradient(135deg, #806da6 0%, #67578a 52%, #51426f 100%); }
+.hero-overlay { background: linear-gradient(90deg, rgb(34 21 49 / 0.2), transparent 70%); }
+.service-card, .reason-card { background: #f6f0e7; }
+.media-placeholder { background: linear-gradient(135deg, #51436c, #8777a7 50%, #3b2d53); }
+.reason-media { background: #d9d1c4; }
+.reason-location { background: linear-gradient(145deg, #778070, #4f5a53 48%, #2f3c36); }
+.reason-neutral { background: linear-gradient(145deg, #c8bdc6, #eee6dc 55%, #8c7896); }
+.chapel-image { background: linear-gradient(145deg, #6c5a87, #d7cfc3 55%, #47375d); }
+.brand-button { background: #f6f0e7; color: #382348; transition: transform 180ms ease, background 180ms ease; }
+.brand-button:hover { transform: translateY(-2px); background: #fffaf2; }
+.form-control { width: 100%; min-height: 3rem; border: 1px solid rgb(246 240 231 / 0.3); border-radius: 0.25rem; background: rgb(246 240 231 / 0.08); padding: 0 1rem; color: #f6f0e7; outline: none; }
+.form-control:focus { border-color: #f6f0e7; box-shadow: 0 0 0 3px rgb(246 240 231 / 0.16); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }

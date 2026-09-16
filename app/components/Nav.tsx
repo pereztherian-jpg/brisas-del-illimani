@@ -72,7 +72,7 @@ export default function Nav() {
       </div>
 
       <div
-        className={`lg:hidden fixed inset-0 top-[60px] bg-neutral-950/98 backdrop-blur transition-transform duration-200 ${
+        className={`lg:hidden fixed inset-0 top-[60px] bg-brand-purple/98 backdrop-blur transition-transform duration-200 ${
           open ? "translate-x-0" : "translate-x-full pointer-events-none"
         }`}
       >
@@ -92,7 +92,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium tracking-wide uppercase text-neutral-950"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-brand-cream px-6 py-3 text-sm font-medium tracking-wide uppercase text-brand-purple"
           >
             Contáctate con nosotros ↗
           </a>
